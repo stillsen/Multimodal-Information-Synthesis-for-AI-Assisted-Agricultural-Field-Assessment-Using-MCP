@@ -38,30 +38,6 @@ Related work on the underlying yield model is available at:
 └── README.md
 ```
 
-## Data and model requirements
-
-The MCP servers expect local assets next to the scripts (or adjust paths in the scripts):
-
-| Component | Expected location |
-|---|---|
-| PDF literature / CSV inputs | `Inputs/` (beside the MCP servers) |
-| Yield model checkpoint | `Models/SSL_VICRegConvNeXt-tiny_Lupine_f1.ckpt` |
-| Trainer helper used by the yield server | `Templates/RGBYieldRegressor_Trainer.py` (from the SSL repository above) |
-| LLM-judge score table | CSV named in `llm_judge-two-question-figures.py` (`CSV_NAME`) |
-
-Place the judge CSV in the figure script output directory (default: `./Evaluation_Reports/`), then run the plotting script.
-
-## Installation
-
-```bash
-git clone https://github.com/stillsen/<this-repository>.git
-cd <this-repository>
-python -m venv venv
-# Windows: venv\Scripts\activate
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
 ## Usage
 
 ### MCP servers
@@ -71,8 +47,6 @@ Start each server from an MCP-compatible client configuration (e.g. Claude Deskt
 - `MCP_yield_server.py`
 - `MCP_pdf_resource_server.py`
 - `MCP_csv_resource_server.py`
-
-Ensure `Inputs/`, `Models/`, and `Templates/` are available as described above.
 
 ### Manuscript figures
 
@@ -84,9 +58,8 @@ This writes Figure 1 (structured vs unstructured access) and Figure 2 (MCP modal
 
 ## Notes for reuse
 
-- Judge model names in the figures are remapped for display; scores come from the provided CSV.
-- Absolute machine paths were removed from the figure script for publication; edit `OUTPUT_DIR` / `CSV_NAME` if your layout differs.
-- Large model checkpoints are not included here; provide them locally or via the associated data deposit.
+- Judge model names in the figures are remapped for display; scores come from the evaluation CSV referenced in the script.
+- Edit `OUTPUT_DIR` / `CSV_NAME` in the figure script if your layout differs.
 
 ## Citation
 
