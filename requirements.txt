@@ -1,0 +1,17 @@
+# MCP servers
+mcp>=1.0.0
+uvicorn>=0.23.0
+
+# Yield server
+torch>=1.9.0
+torchvision>=0.10.0
+Pillow>=8.0.0
+numpy>=1.19.0
+
+# PDF server
+PyPDF2>=3.0.0
+PyMuPDF>=1.23.0
+
+# Figure / evaluation script
+pandas>=1.3.0
+matplotlib>=3.4.0
