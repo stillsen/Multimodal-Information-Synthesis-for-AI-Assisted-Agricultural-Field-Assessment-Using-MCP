@@ -13,16 +13,7 @@ authors:
     affiliation: >-
       Leibniz-Centre for Agricultural Landscape Research
       (ZALF) e.V.
-keywords:
-  - Model Context Protocol
-  - MCP
-  - large language models
-  - multimodal information access
-  - agriculture
-  - yield prediction
-  - soil data
-  - scientific literature
-  - LLM-as-a-judge
+keywords: Large Language Model; Model Context Protocol; Multimodal Integration; Agricultural Field Assessment; Agentic Artificial Intelligence; Data-Driven Agriculture
 license: GPL-3.0
 # Update repository-code after creating the GitHub repository:
 # repository-code: "https://github.com/stillsen/<this-repository>"
