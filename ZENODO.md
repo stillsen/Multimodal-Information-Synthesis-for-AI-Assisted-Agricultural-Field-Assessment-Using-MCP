@@ -27,5 +27,4 @@ GNU General Public License v3.0 (GPL-3.0)
 ## Related identifiers (fill when available)
 
 - GitHub repository: `https://github.com/stillsen/<this-repository>`
-- Related paper DOI: *(add when published)*
 - Related SSL software: https://github.com/stillsen/Self-Supervised-Learning-for-Crop-Classification-and-Yield-Prediction
